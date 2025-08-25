@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Faith of the Faithful's Gospel Ministry - FTF</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" xintegrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root {
+            --color-primary: #1e3a8a; /* Deep Navy Blue */
+            --color-secondary: #b48c2c; /* Rich Gold */
+            --color-background: #fdfdfd;
+            --color-text: #333333;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--color-background);
+            color: var(--color-text);
+        }
+        .font-lora { font-family: 'Lora', serif; }
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://i.postimg.cc/vBX9DLsR/Whats-App-Image-2025-08-25-at-04-43-41.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .welcome-bg {
+            background-image: linear-gradient(rgba(253, 253, 253, 0.9), rgba(253, 253, 253, 0.9)), url('https://i.postimg.cc/dQNzbbyF/462407181-27335734662706926-5129336675631331018-n-removebg-preview.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center right;
+        }
+        .prophetic-word-bg {
+            background-color: #f3f4f6;
+        }
+        .section-title { @apply text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center font-lora; }
+        .section-subtitle { @apply text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto; }
+        .btn { @apply px-8 py-3 rounded-md font-semibold transition-all duration-300 ease-in-out shadow-md; }
+        .btn-primary { @apply bg-[var(--color-primary)] text-white hover:bg-opacity-90 transform hover:scale-105; }
+        .btn-secondary { @apply bg-transparent border-2 border-[var(--color-secondary)] text-[var(--color-secondary)] hover:bg-[var(--color-secondary)] hover:text-white; }
+        .card { @apply bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out border border-gray-100; }
+        .nav-link { @apply text-white hover:text-[var(--color-secondary)] transition-colors duration-300 font-medium; }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-slate-900 bg-opacity-80 backdrop-blur-sm text-white p-4 fixed w-full z-50 transition-all duration-300 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <img src="https://i.postimg.cc/WpX64jND/Whats-App-Image-2025-08-25-at-04-43-42.jpg" alt="FTF Ministry Logo" class="h-12 w-12 rounded-full">
+                <span class="text-xl font-bold font-lora tracking-wider">FTF Ministry</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#sermons" class="nav-link">Messages</a>
+                <a href="#family" class="nav-link">Family</a>
+                <a href="#events" class="nav-link">Join Us</a>
+                <a href="#giving" class="ml-4 px-5 py-2 rounded-md font-semibold bg-[var(--color-secondary)] text-white hover:bg-opacity-90 transition-all">Give</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden mt-4 bg-slate-800 rounded-md">
+            <a href="#about" class="block py-3 px-4 text-sm hover:bg-slate-700">About</a>
+            <a href="#sermons" class="block py-3 px-4 text-sm hover:bg-slate-700">Messages</a>
+            <a href="#family" class="block py-3 px-4 text-sm hover:bg-slate-700">Family</a>
+            <a href="#events" class="block py-3 px-4 text-sm hover:bg-slate-700">Join Us</a>
+            <a href="#giving" class="block py-3 px-4 text-sm hover:bg-slate-700 rounded-b-md">Give</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex items-center justify-center text-white text-center pt-16">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 font-lora leading-tight animate-fade-in-down">A Lifestyle of Faith. An Inheritance in Christ.</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto animate-fade-in-up italic">Empowering believers to walk in victory and possess their divine inheritance.</p>
+            <div class="space-y-4 md:space-y-0 md:space-x-4 animate-fade-in-up">
+                <a href="#welcome" class="btn bg-[var(--color-secondary)] text-white hover:bg-opacity-90 transform hover:scale-105">I'm New Here</a>
+                <a href="#sermons" class="btn bg-transparent border-2 border-white hover:bg-white hover:text-slate-900">Watch a Message</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prophetic Word Section -->
+    <section class="py-20 prophetic-word-bg">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-lora text-gray-600">The Prophetic Word for 2025</h2>
+            <div class="max-w-4xl mx-auto mt-8 text-left bg-white p-8 md:p-12 rounded-lg shadow-lg border-t-4 border-[var(--color-secondary)]">
+                <h3 class="font-playfair text-4xl text-center text-[var(--color-primary)] mb-6 italic">GLORY TO GOD!!</h3>
+                <div class="text-lg text-gray-700 leading-relaxed space-y-4">
+                    <p>
+                        An end has come to pain and struggles for we have broken through into a new season with honor, those who know us will need to look again for we have broken through with honor. The old is gone, the new has come. We just need to rejoice for we are now growing and glowing and there's nothing the enemies can do.
+                    </p>
+                    <p>
+                        Those who resist our rising this Time shall perish, those who oppose it go down without Mercy. We have passed the test, we have crossed over. Glory to God. We are full of Beauty and glory.
+                    </p>
+                    <p>
+                        We are in our shining Armor and we have taken over and this beauty is sealed by the blood sacrifice of Jesus. It's our month of victory, it's our time of Glory, no turning back, no losing, we are in charge and we are reigning in life.
+                    </p>
+                </div>
+                <p class="text-xl font-bold text-center text-gray-800 mt-8">
+                    Glory to God forever more. Give the Lord a shout of Praise and Glory.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Home Section -->
+    <section id="welcome" class="py-24 welcome-bg">
+        <div class="container mx-auto px-4 flex items-center">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-4xl md:text-5xl font-bold font-lora mb-4 text-[var(--color-primary)]">You Belong Here.</h2>
+                <p class="text-xl max-w-xl mx-auto md:mx-0 mb-8">Welcome to The Faith of the Faithful's Ministry. We are a family, united by faith and a shared passion for Jesus Christ. Whether you're seeking truth, a place to belong, or a community to grow with, we welcome you with open arms. Your journey of faith finds a home here.</p>
+                <a href="#events" class="btn btn-primary">Join a Service</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2"><img src="https://i.postimg.cc/Wt3rcDFG/274744059-7291528064220882-1800192186377951348-n-removebg-preview.png" alt="Pastor Isah David" class="rounded-lg shadow-xl w-full"></div>
+                <div class="md:w-1/2">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4 font-lora">Our Visionary Leader</h3>
+                    <p class="mb-4 text-lg">Pastor Isah David is a profound teacher of the Word and an anointed servant of God. He leads FTF Ministry with a divine mandate to raise a generation of believers who are not just hearers, but doers of the Word—walking in power, purpose, and their God-given inheritance.</p>
+                    <p class="mb-6 italic">His ministry is marked by a potent prophetic anointing and an unwavering commitment to seeing lives transformed by the power of the Gospel.</p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row-reverse items-center gap-12 mt-16">
+                <div class="md:w-1/2"><img src="https://i.postimg.cc/Hxwbw11y/491391545-29375013195445719-4978716725906013357-n-removebg-preview.png" alt="Pastor Isah and Mercy Isah" class="rounded-lg shadow-xl w-full"></div>
+                <div class="md:w-1/2">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4 font-lora">A Partnership in Purpose</h3>
+                    <p class="mb-4 text-lg">Pastor Isah David is joined in life and ministry by his gracious wife, Mercy Audu Isah. United in marriage on October 7th, 2017, they serve as a testament to a Christ-centered union.</p>
+                    <p class="mb-6 italic">Mama Mercy is a pillar of prayer and wisdom within the ministry. Together, they are passionately dedicated to shepherding the flock of FTF Ministry and building strong, faith-filled families.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sermons Section -->
+    <section id="sermons" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Experience the Word</h2>
+            <p class="section-subtitle">Faith comes by hearing. Immerse yourself in the transformative teaching of God's Word and let it anchor your soul and elevate your spirit.</p>
+            
+            <!-- Featured YouTube Video -->
+            <div class="max-w-4xl mx-auto mb-12">
+                <div class="aspect-w-16 aspect-h-9 rounded-lg shadow-lg overflow-hidden">
+                    <iframe src="https://www.youtube.com/embed/YnGFXwiJRBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-full"></iframe>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <a href="https://t.me/FTFMinitry/822" target="_blank" class="card p-6 flex items-center space-x-4">
+                    <i class="fab fa-telegram text-5xl text-blue-500"></i>
+                    <div>
+                        <h3 class="text-xl font-bold mb-1">The Power of Consistency</h3>
+                        <p class="text-gray-600">From the 'School of Greatness' series. Discover the force of consistency in your walk of faith.</p>
+                    </div>
+                </a>
+                <a href="https://t.me/FTFMinitry/899" target="_blank" class="card p-6 flex items-center space-x-4">
+                    <i class="fab fa-telegram text-5xl text-blue-500"></i>
+                    <div>
+                        <h3 class="text-xl font-bold mb-1">The Counsel of Wisdom</h3>
+                        <p class="text-gray-600">Another powerful message from the 'School of Greatness' series. Gain divine insight and direction.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="text-center mt-12">
+                <a href="https://t.me/FTFMinitry" target="_blank" class="btn btn-secondary">Access More Sermons on Telegram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Family Section -->
+    <section id="family" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Experience Our Community</h2>
+            <p class="section-subtitle">We are more than a congregation; we are a family. A place of genuine connection, heartfelt worship, and mutual encouragement.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <img src="https://i.postimg.cc/fTVXT9qF/Whats-App-Image-2025-08-25-at-04-43-41-1.jpg" alt="Church family bonding" class="rounded-lg shadow-xl w-full h-full object-cover">
+                <img src="https://i.postimg.cc/vBX9DLsR/Whats-App-Image-2025-08-25-at-04-43-41.jpg" alt="Church members in service" class="rounded-lg shadow-xl w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Meet the Team Section -->
+    <section class="py-20 bg-slate-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="section-title">The 2025 Ministry Team</h2>
+            <p class="section-subtitle">A dedicated team of servants committed to the vision of the house and the spiritual growth of every member.</p>
+            <img src="https://i.postimg.cc/rm5xcXhp/471675742-28262748873338829-7780074266345049414-n.jpg" alt="FTF Ministry Team 2025" class="rounded-lg shadow-xl max-w-4xl mx-auto">
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-slate-900 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-white">Join Us Live</h2>
+            <p class="section-subtitle text-slate-300">Experience the vibrant atmosphere of our worship services. We gather in person and online to glorify God and be transformed by His presence.</p>
+            <div class="bg-slate-800 p-10 rounded-lg shadow-xl max-w-4xl mx-auto text-center border-t-4 border-[var(--color-secondary)]">
+                <h3 class="text-3xl font-bold mb-2 font-lora">Monday Prophetic Service</h3>
+                <p class="text-lg text-[var(--color-secondary)] mb-6"><i class="fas fa-map-marker-alt mr-2"></i>Lokoja, Nigeria & Streaming Live Online</p>
+                <div id="countdown" class="text-4xl md:text-5xl font-bold flex justify-center space-x-4 md:space-x-8 mb-8">
+                    <div><span id="days" class="text-[var(--color-secondary)]">00</span><p class="text-sm font-normal text-slate-400">Days</p></div>
+                    <div><span id="hours" class="text-[var(--color-secondary)]">00</span><p class="text-sm font-normal text-slate-400">Hours</p></div>
+                    <div><span id="minutes" class="text-[var(--color-secondary)]">00</span><p class="text-sm font-normal text-slate-400">Minutes</p></div>
+                    <div><span id="seconds" class="text-[var(--color-secondary)]">00</span><p class="text-sm font-normal text-slate-400">Seconds</p></div>
+                </div>
+                <p class="mb-6 text-slate-300">Every Monday at 6:00 PM WAT. Don't miss this appointment with destiny.</p>
+                <a href="#" class="btn bg-[var(--color-secondary)] text-white">Add to Calendar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Giving/Partnership Section -->
+    <section id="giving" class="py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="section-title">Partner in the Gospel</h2>
+            <p class="section-subtitle">Your generosity is a vital part of advancing the Kingdom of God. Through your giving, we are able to reach souls, transform lives, and expand our impact.</p>
+            <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg border-t-4 border-[var(--color-primary)]">
+                <h3 class="text-2xl font-bold font-lora mb-4">Giving Details</h3>
+                <p class="text-lg"><strong>Bank:</strong> UBA (United Bank for Africa)</p>
+                <p class="text-lg"><strong>Account Number:</strong> 1025853154</p>
+                <p class="text-lg mb-6"><strong>Account Name:</strong> Faith of the Faithful Ministries</p>
+                <p class="italic">"And my God will meet all your needs according to the riches of his glory in Christ Jesus." - Philippians 4:19</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-900 text-slate-300 py-16">
+        <div class="container mx-auto px-4 text-center">
+             <a href="#" class="flex items-center justify-center space-x-2 mb-4">
+                <img src="https://i.postimg.cc/WpX64jND/Whats-App-Image-2025-08-25-at-04-43-42.jpg" alt="FTF Ministry Logo" class="h-16 w-16 rounded-full">
+            </a>
+            <h3 class="text-3xl font-bold mb-4 font-lora text-white">FTF <span class="text-[var(--color-secondary)]">Ministry</span></h3>
+            <p class="mb-4"><i class="fas fa-map-marker-alt mr-2"></i>Lokoja, Nigeria</p>
+            <p class="mb-8"><i class="fas fa-envelope mr-2"></i><a href="mailto:faithofthefaithfuls@gmail.com" class="hover:text-[var(--color-secondary)]">faithofthefaithfuls@gmail.com</a></p>
+            <div class="flex justify-center space-x-6 text-2xl mb-8">
+                <a href="#" class="hover:text-blue-500 transition-colors"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://youtu.be/YnGFXwiJRBA?si=yAaDbc9IahIMLj3X" target="_blank" class="hover:text-red-600 transition-colors"><i class="fab fa-youtube"></i></a>
+                <a href="https://t.me/FTFMinitry" target="_blank" class="hover:text-blue-400 transition-colors"><i class="fab fa-telegram"></i></a>
+            </div>
+            <p class="text-sm text-slate-500">&copy; <span id="year"></span> The Faith of the Faithful's Gospel Ministry. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) { header.classList.remove('bg-opacity-80'); } 
+            else { header.classList.add('bg-opacity-80'); }
+        });
+
+        // Countdown Timer
+        function getNextMonday6PM() {
+            const now = new Date();
+            const targetTimezoneOffset = 60; // WAT is UTC+1
+            const localTimezoneOffset = -now.getTimezoneOffset();
+            const timezoneDifference = (targetTimezoneOffset - localTimezoneOffset) * 60 * 1000;
+            const nowInTargetTimezone = new Date(now.getTime() + timezoneDifference);
+            let dayOfWeek = nowInTargetTimezone.getDay();
+            let daysUntilMonday = (1 - dayOfWeek + 7) % 7;
+            const targetDate = new Date(nowInTargetTimezone);
+            targetDate.setDate(nowInTargetTimezone.getDate() + daysUntilMonday);
+            targetDate.setHours(18, 0, 0, 0);
+            if (targetDate < nowInTargetTimezone) {
+                targetDate.setDate(targetDate.getDate() + 7);
+            }
+            return new Date(targetDate.getTime() - timezoneDifference);
+        }
+        const countdownDate = getNextMonday6PM().getTime();
+        const countdownFunction = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById('days').innerText = days.toString().padStart(2, '0');
+            document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById('countdown').innerHTML = "<span class='text-2xl md:text-3xl'>Service is Live Now!</span>";
+            }
+        }, 1000);
+
+        // Set current year
+        document.getElementById('year').innerText = new Date().getFullYear();
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+                if (!mobileMenu.classList.contains('hidden')) { mobileMenu.classList.add('hidden'); }
+            });
+        });
+    </script>
+
+</body>
+</html>
